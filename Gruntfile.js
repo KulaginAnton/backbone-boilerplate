@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 module.exports = function (grunt) {
     var path = require('path');
     require('time-grunt')(grunt);
@@ -84,6 +84,9 @@ module.exports = function (grunt) {
                 }
             }
         },
+        jshint: {
+            all: ['resources/assets/js/project/*/*.js']
+        },
         watch: {
             options: {
                 livereload: {port: 35729}
@@ -163,6 +166,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jst');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-notify');
 

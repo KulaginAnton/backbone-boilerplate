@@ -9,7 +9,7 @@ var AppRouter = Backbone.Router.extend({
         window.location.hash="";
         this.MainView = new MainView({model:MainModel});
         Backbone.history.bind('url-changed', function(path,e){
-            console.log("url change", path, e)
+            console.log("url change", path, e);
         });
     },
     start:function(){
@@ -18,8 +18,7 @@ var AppRouter = Backbone.Router.extend({
             success:function(){
                 $('.container').html(_this.MainView.render().el);
             }
-        })
-
+        });
     },
     welcome:function(name){
         alert(name);
