@@ -1,2 +1,2 @@
 # backbone-boilerplate
-boilerplate for my work
+Пример приложения собранного на основе Backbonejs + underscorejs  с использованием grunt
