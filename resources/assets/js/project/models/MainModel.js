@@ -1,6 +1,6 @@
 var modMain = Backbone.Model.extend({
     url: function(method){
-        return '/api';
+        return '/api/test';
     },
     initialize: function(){
 

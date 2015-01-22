@@ -43,7 +43,7 @@ module.exports = function (grunt) {
                     separator: ''
                 },
                 src: [
-                    'resources/assets/css/style.css'
+                    'resources/assets/css/project/style.css'
                 ],
                 dest: 'web/css/styles.css'
             },
